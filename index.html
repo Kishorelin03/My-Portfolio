@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kishorelin AM | Web designer </title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="./Images/Logo_header.png" class="logo">
+                <ul id="sidemenu">
+                    <li>
+                        <a href="#header">Home</a>
+                    </li>
+                    <li>
+                        <a href="#about">About</a>
+                    </li>
+                    <li>
+                        <a href="#blogs">Blog</a>
+                    </li>
+                    <li>
+                        <a href="#portfolio">Projects</a>
+                    </li>
+                    <li>
+                        <a href="#contact">Contact</a>
+                    </li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+           <div class="header-text">
+            <p>Web Designer & Developer </p>
+            <h1>Welcome to my Portfolio, <br> I'm <span>Kishorelin.</span> </h1>
+           </div>
+        </div>
+    </div>
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="./Images/About_row_col_1.jpg">
+                </div>
+
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I pride myself as a student, I Love balancing the creative mind with the need to produce results, Creating designs and
+                        solving problems are my passion. Overall, as a frontend developer without professional experience, I am committed to using my skills and enthusiasm to make a positive impact in the field and grow into a successful and innovative developer. <br>
+                    </p>
+                    <br>
+                    <p>
+                        My areas of interested include :
+                        Graphic design, Web development, Communication, Scheduling, team building and leadership.
+                    </p>
+
+                    <div class="tab-titles">
+                        <div class="tab-links active-link" onclick="opentab('skills')">Skills</div>
+                        <div class="tab-links"onclick="opentab('experience')">Experience</div>
+                        <div class="tab-links"onclick="opentab('education')">Education</div>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Web Designer</span><br>Front-End Developement</li>
+                            <li><span>UI/UX</span><br>Web/App Interfaces</li>
+                            <li><span>Graphic  Designing</span><br>Logo, Brouchers, flyers Designs</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2022 - Current</span><br>Freelancer</li>
+                            <li><span>3 Months Internship</span><br>Macincode Technology,Chennai</li>
+                            <!-- <li><span>Graphic  Designing</span><br>Logo, Brouchers, flyers Designs</li> -->
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2019 - 2023 </span><br>Bachelor of Computer Science Engineering at Sathyabama University</li>
+                            <!-- <li><span>UI/UX</span><br>Web/App Interfaces</li>
+                            <li><span>Graphic  Designing</span><br>Logo, Brouchers, flyers Designs</li> -->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="blogs">
+        <div class="container">
+            <h1 class="sub-title">My Blogs</h1>
+            <div class="blog-list">
+                <div>
+                    <img src="./Images/BlogImage_1.webp" class="blog-list-image">
+                    <h2>Web Development Unmasked</h2>
+                    <p>For individuals with a passion for online technology, programming, and problem-solving, a career as a web developer may be both exciting and lucrative. Yet it's critical to comprehend the realities of the position and the abilities needed to be successful as a web developer.</p>
+                    <a href="https://kishorelinassumption.blogspot.com/2023/02/web-development-unmasked-truth-about.html">Learn More</a>
+                </div>
+
+                <div>
+                    <img src="./Images/BlogImage_2.webp" class="blog-list-image">
+                    <h2>Reality of AdSense</h2>
+                    <p>Earing through Google AdSense is very easy, that's a myth said by most YouTubers and by bloggers.</p>
+                    <a href="https://kishorelinassumption.blogspot.com/2023/02/adsense-approval-easyhard-why-is.html">Learn More</a>
+                </div>
+
+                <div>
+                    <img src="./Images/BlogImage_3.png" class="blog-list-image">
+                    <h2>Understanding Torrent Files</h2>
+                    <p>Using the peer-to-peer (P2P) file-sharing technology known as BitTorrent, a torrent file is a tiny file that provides details about a bigger file or series of files that may be downloaded.</p>
+                    <a href="https://kishorelinassumption.blogspot.com/2023/02/understanding-torrent-files-how-they.html">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Portfolio -->
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="project-list">
+
+                <div class="project">
+                    <img src="./Images/ProjectImage1.png">
+                    <div class="layer">
+                        <h3>Touring Website Design</h3>
+                        <p>The Website is full responsive for all devices, I used  HTML, CSS (SAAS) for this project.</p>
+                        <a href="https://natourstouring-website-project.netlify.app/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <div class="project">
+                    <img src="./Images/ProjectImage2.png">
+                    <div class="layer">
+                        <h3>Cafe Captian Restobar!</h3>
+                        <p>I created this website to practice Flex box and some basic CSS Properties</p>
+                        <a href="https://cafe-captian-restobar-kishorelin.netlify.app/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <div class="project">
+                    <img src="./Images/ProjectImage3.png">
+                    <div class="layer">
+                        <h3>Touring Website Design</h3>
+                        <p>It is a Website to order food and know about the dishes they offer.Landing Page for Some random shop called OmniFood</p>
+                        <a href="https://omnifood-site-kishorelin.netlify.app/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>    
+            </div>
+            <a href="https://github.com/Kishorelin03?tab=repositories" class="btn">See More</a>
+        </div>
+    </div>
+
+
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p> <i class="fa-solid fa-paper-plane"></i> contact@Kishorelin.tad001@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i> 9750323322</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/profile.php?id=100009172347884"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter-square"></i></a>
+                        <a href="https://www.instagram.com/kishhh___03/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/kishorelinam/"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+
+                    <a href="./Images/Kishorelin_AM_Resume.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="text" name="Email" placeholder="Enter Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>Copyright &copy; 2023, Kishorelin AM. All rights Reserved</p>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
